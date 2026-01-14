@@ -37,6 +37,7 @@
     <ul id="liste-sardanes"></ul>
       <script> 
         console.log("VERSION 2 DU SCRIPT");
+        function formatDateFR(dateStr) { const date = new Date(dateStr); return date.toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" }); }
       fetch("./events.json?nocache=" + Date.now()) 
         .then(response => response.json()) 
         .then(data => { 
