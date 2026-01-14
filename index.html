@@ -3,27 +3,57 @@
   <head> 
     <meta charset="UTF-8"> 
     <title>Calendrier des Sardanes</title> 
+    <style> 
+      #liste-sardanes { list-style: none; 
+                       padding: 0; 
+                      } 
+      .event-card { 
+        background: #f7f7f7; 
+        border-radius: 8px; 
+        padding: 12px 16px; 
+        margin-bottom: 12px; 
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+        font-family: sans-serif; 
+              } 
+      .event-date { 
+        font-size: 1.1em; 
+        font-weight: bold; 
+        margin-bottom: 4px; 
+      } 
+      .event-lieu { 
+        margin-bottom: 4px;
+      } 
+      .event-type { 
+        display: inline-block; 
+        background: #e0e0e0; 
+        padding: 2px 8px; 
+        border-radius: 6px; 
+        font-size: 0.85em; 
+        margin-top: 6px; } </style>
   </head> 
   <body> <h1>Bienvenue sur le Calendrier des Sardanes du 66</h1> 
     <p>Site en construction…</p> 
     <h2>Prochains événements</h2> 
     <ul id="liste-sardanes"></ul>
       <script> 
-        console.log("SCRIPT LANCÉ");
-        console.log("SCRIPT OK");
-        fetch("./events.json")
-          .then(response => response.json()) 
-          .then(data => { 
-                  const liste = document.getElementById("liste-sardanes"); 
-                  data.sort((a, b) => new Date(a.date) - new Date(b.date)); 
-                  data.forEach(event => { const item = document.createElement("li"); 
-                                        item.textContent =
-                                          `${event.date} — ${event.heure} — ${event.lieu} — ${event.cobla} — ${event.type}`; 
-                                         liste.appendChild(item);
-                                        }); 
-          }) 
-          .catch(error => { 
-            console.error("Erreur de chargement :", error); }); 
+      fetch("./events.json?nocache=" + Date.now()) 
+        .then(response => response.json()) 
+        .then(data => { 
+          const liste = document.getElementById("liste-sardanes"); 
+          data.sort((a, b) => new Date(a.date) - new Date(b.date)); 
+          data.forEach(event => { 
+              const item = document.createElement("li"); 
+              item.className = "event-card"; 
+              item.innerHTML = ` 
+                <div class="event-date">📅 ${event.date} — ${event.heure}</div> 
+                <div class="event-lieu">📍 <strong>${event.lieu}</strong></div> 
+                <div class="event-cobla">🎼 ${event.cobla}</div> 
+                <div class="event-type">🏷️ ${event.type}</div> 
+                `; 
+            liste.appendChild(item);
+          });
+        }) 
+        .catch(error => console.error("Erreur de chargement :", error));
       </script>
   </body> 
 </html>
