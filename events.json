@@ -1,14 +1,5 @@
 [
   { 
-  "date": "11-01-2026", 
-  "heure": "15:30", 
-  "lieu": "Vinçà", 
-  "salle" : "Salle Gipulo",
-  "cobla": "Casenoves", 
-  "type": "Ballada" ,
-  "tarif": "entrée libre"
-},
-{ 
   "date": "01-02-2026", 
   "heure": "15:00", 
   "lieu": "Cabestany", 
@@ -22,7 +13,7 @@
   "heure": "matin", 
   "lieu": " Pezilla De La Rivière", 
   "salle" : "non communiqué",
-  "cobla": "Mil.lenaria et Casenoves", 
+  "cobla": "Mil.lenaria", 
   "type": "ballada" ,
   "tarif": "non communiqué"
 }
