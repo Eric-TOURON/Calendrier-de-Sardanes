@@ -37,10 +37,11 @@
         margin-top: 6px; } </style>
   </head> 
   
-        <body> <h1>Bienvenue sur le Calendrier des Sardanes du 66</h1> 
-        
-        <h2>Prochains événements</h2> 
-        <ul id="liste-sardanes"></ul>
+        <body> 
+          background-color: #f7f3ff; /* pastel violet très doux */
+          <h1>Bienvenue sur le Calendrier des Sardanes du 66</h1> 
+          <h2>Prochains événements</h2> 
+          <ul id="liste-sardanes"></ul>
               <script> 
               console.log("VERSION 2 DU SCRIPT");
               function formatDateFR(dateStr) { const date = new Date(dateStr); return date.toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" }); }
