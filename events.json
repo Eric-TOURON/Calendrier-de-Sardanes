@@ -1,14 +1,5 @@
 [
-   { 
-  "date": "01-02-2026", 
-  "heure": "matin", 
-  "lieu": " Pezilla De La Rivière", 
-  "salle" : "non communiqué",
-  "cobla": "Mil.lenaria", 
-  "type": "ballada" ,
-  "tarif": "non communiqué"
-},
-  { 
+     { 
   "date": "22-01-2026", 
   "heure": "10h / 16h30", 
   "lieu": " Reynes", 
@@ -42,6 +33,15 @@
   "salle" : "non communiqué",
   "cobla": "Principal del Rossello", 
   "type": "non communiqué" ,
+  "tarif": "non communiqué"
+},
+   { 
+  "date": "01-02-2026", 
+  "heure": "matin", 
+  "lieu": " Pezilla De La Rivière", 
+  "salle" : "non communiqué",
+  "cobla": "Mil.lenaria", 
+  "type": "ballada" ,
   "tarif": "non communiqué"
 },
   { 
