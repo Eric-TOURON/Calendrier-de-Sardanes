@@ -5,7 +5,8 @@
   "lieu": "Vinçà", 
   "salle" : "Salle Gipulo",
   "cobla": "Casenoves", 
-  "type": "Ballada" 
+  "type": "Ballada" ,
+  "tarif": "entrée libre"
 },
 { 
   "date": "01-02-2026", 
@@ -13,6 +14,7 @@
   "lieu": "Cabestany", 
   "salle" : "Centre Culturel",
   "cobla": "Mil.lenaria et Casenoves", 
-  "type": "Aplec" 
+  "type": "Aplec" ,
+  "tarif": "7€"
 }
 ]
