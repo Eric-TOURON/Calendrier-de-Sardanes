@@ -7,7 +7,7 @@
   "cobla": "Principal del Rossello", 
   "type": "non communiqué" ,
   "tarif": "non communiqué"
-  "url": "http://www.principaldelrossello.com/"
+ 
 },
   { 
   "date": "23-01-2026", 
@@ -17,7 +17,7 @@
   "cobla": "Principal del Rossello", 
   "type": "non communiqué" ,
   "tarif": "non communiqué"
-"url": "http://www.principaldelrossello.com/"
+
 },
   { 
   "date": "24-01-2026", 
@@ -27,7 +27,7 @@
   "cobla": "Principal del Rossello", 
   "type": "non communiqué" ,
   "tarif": "non communiqué"
-       "url": "http://www.principaldelrossello.com/"
+       
 },
     { 
   "date": "25-01-2026", 
@@ -37,7 +37,7 @@
   "cobla": "Principal del Rossello", 
   "type": "non communiqué" ,
   "tarif": "non communiqué"
-         "url": "http://www.principaldelrossello.com/"
+         
 },
    { 
   "date": "01-02-2026", 
@@ -47,7 +47,7 @@
   "cobla": "Mil.lenaria", 
   "type": "ballada" ,
   "tarif": "non communiqué"
-        "url": "https://www.coblamil-lenaria.fr/"
+    
 },
   { 
   "date": "01-02-2026", 
@@ -57,7 +57,7 @@
   "cobla": "Mil.lenaria et Casenoves", 
   "type": "Aplec" ,
   "tarif": "7€"
-       "url": "https://www.coblamil-lenaria.fr/"
+       
 },
      { 
   "date": "01-02-2026", 
@@ -67,7 +67,7 @@
   "cobla": "Sol de Banuyls", 
   "type": "Ballada" ,
   "tarif": "non communiqué"
-          "url": "https://coblasoldebanyuls.wixsite.com/coblasdb"
+         
 },
    { 
   "date": "01-02-2026", 
@@ -77,7 +77,7 @@
   "cobla": "Principal del Rossello", 
   "type": "non communiqué" ,
   "tarif": "non communiqué"
-        "url": "http://www.principaldelrossello.com/"
+       
 },
     { 
   "date": "08-02-2026", 
@@ -87,7 +87,7 @@
   "cobla": "Sol de Banyuls", 
   "type": "Procession, Messe et Sardanes" ,
   "tarif": "non communiqué"
-         "url": "https://coblasoldebanyuls.wixsite.com/coblasdb"
+        
 }, 
      { 
   "date": "15-02-2026", 
@@ -97,7 +97,7 @@
   "cobla": "Sol de Banuyls", 
   "type": "Ballada" ,
   "tarif": "non communiqué"
-          "url": "https://coblasoldebanyuls.wixsite.com/coblasdb"
+          
 },
   { 
   "date": "22-02-2026", 
@@ -107,7 +107,7 @@
   "cobla": "Principal del Rossello", 
   "type": "non communiqué" ,
   "tarif": "non communiqué"
-       "url": "http://www.principaldelrossello.com/"
+      
 },
  { 
   "date": "01-03-2026", 
@@ -117,7 +117,7 @@
   "cobla": "Principal del Rossello", 
   "type": "non communiqué" ,
   "tarif": "non communiqué"
-      "url": "http://www.principaldelrossello.com/"
+     
 }
   
 ]
