@@ -74,7 +74,18 @@
         }) 
         .catch(error => console.error("Erreur de chargement :", error));
       </script>
-          <footer style=" margin-top:40px; padding:15px; background:#f2d9e6; border-radius:8px; text-align:center; font-family:sans-serif; color:#333; "> 
-            📬 Pour me contacter : <a href="mailto:cuscullets@sfr.fr" style="font-size:1.4em; font-weight:bold; color:#333;"> cuscullets@sfr.fr </a>
+<footer style="margin-top:40px; padding:15px; background:#f2d9e6; border-radius:8px; text-align:center; font-family:sans-serif; color:#333;"> 
+  📬 Pour me contacter : 
+  <a href="mailto:cuscullets@sfr.fr" style="font-size:1.4em; font-weight:bold; color:#333;"> cuscullets@sfr.fr </a> 
+  <div style="margin-top:10px; font-size:0.9em;"> 
+    👀 Visiteurs : <span id="visits"></span> 
+  </div> 
+  <script> 
+    fetch('https://api.countapi.xyz/hit/calendrier-sardanes-66/visites') 
+      .then(r => r.json()) 
+      .then(d => { document.getElementById('visits').innerText = d.value;
+                 }); 
+  </script> 
+</footer>
   </body> 
 </html>
