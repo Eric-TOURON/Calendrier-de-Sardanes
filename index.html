@@ -65,7 +65,7 @@
                         <div class="event-date">📅 date :${event.date} — ${event.heure}</div> 
                         <div class="event-lieu">📍 lieu :<strong>${event.lieu}</strong></div>
                         <div class="event-salle">🏛️ salle :${event.salle}</div>
-                        <div class="event-cobla">🎼 Cobla :${event.cobla}</div> 
+                        <div class="event-cobla"> 🎼 Cobla : ${coblesURL[event.cobla] ? `<a href="${coblesURL[event.cobla]}" target="_blank">${event.cobla}</a>` : event.cobla } </div>
                         <div class="event-type">🏷️ type :${event.type}</div> 
                         <div class="event-tarif">💶 Tarif :${event.tarif}</div>
                 `; 
@@ -73,6 +73,10 @@
           });
         }) 
         .catch(error => console.error("Erreur de chargement :", error));
+                const coblesURL = { 
+                  "Tres Vents": "https://www.coblatresvents.cat", 
+                  "Mil·lenària": "https://www.coblamillenaria.cat", 
+                  "Ciutat de Girona": "https://www.coblagirona.cat" };
       </script>
 <footer style="margin-top:40px; padding:15px; background:#f2d9e6; border-radius:8px; text-align:center; font-family:sans-serif; color:#333;"> 
   📬 Pour me contacter : 
